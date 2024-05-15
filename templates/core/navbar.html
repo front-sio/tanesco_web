@@ -1,0 +1,151 @@
+{% load static %}
+<!-- Loader -->
+<div class="loader-wrapper" id="loader">
+    <div class="loader">
+        <img src="/media/logo/TANESCO LOGO II.png" alt="">
+    </div>
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- header -->
+<div class="header">
+    <div class="topNavbar">
+        <div class="container">
+            <div class="top-items-wrap">
+                
+                    <div class="social-links">
+                        <a href=""><img src="./assets/icon/icons8-facebook-96.png" alt="" class="social-icon"></a>
+                        <a href=""><img src="./assets/icon/icons8-instagram-96.png" alt="" class="social-icon"></a>
+                        <a href=""><img src="./assets/icon/icons8-linkedin-96.png" alt="" class="social-icon"></a>
+                    </div>
+                
+               
+                    <div class="nikonekt-container">
+                        <!-- <span>Nikonekt App</span> -->
+                        <span><a href=""><img src="./assets/icon/play store.png" alt="" class="get-the-app"></span>
+                        <span><a href=""><img src="./assets/icon/app store.png" alt="" class="get-the-app"></a></span> 
+                    </div>
+
+                    <div class="language">
+                        <div class="vr"></div>
+                        <div>
+                            <select name="" id="" class="language-select">
+                                <option value="swahili">Swahili</option>
+                                <option value="us-En">English</option>
+                            </select>
+                        </div>
+                    </div>
+                
+            </div>
+                
+        </div>
+    </div>
+
+        <nav>
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                <img src="/media/logo/TANESCO LOGO II.png" alt="Tanesco Logo">
+                </a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <img src="/media/icon/icons8-menu-48.png" alt="">
+            </div>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">PROJECTS</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="#">Goverment Funded</a></li>
+                                <li><a href="#">Donor Funded</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">INVESTMENTS</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="{% url 'investment' %}">Environment Reports</a></li>
+                                <li><a href="#">Investment Reports</a></li>
+                                <li><a href="#">Opportunities</a></li>
+                                <li><a href="#">Investors Portal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">ABOUT US</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="{% url 'about' %}">Historical Background</a></li>
+                                <li><a href="about.html">Mission & Vission</a></li>
+                                <li><a href="about.html">Legal</a></li>
+                                <li><a href="about.html">Core Functions</a></li>
+                                <li><a href="about.html">Board Of Directors</a></li>
+                                <li><a href="about.html">Management</a></li>
+                                <li><a href="about.html">Stakeholders</a></li>
+                                <li><a href="about.html">Financial Statements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="nav-mobile-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">PROJECTS</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="#">Goverment Funded</a></li>
+                                <li><a href="#">Donor Funded</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">INVESTMENTS</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="investments.html">Environment Reports</a></li>
+                                <li><a href="#">Investment Reports</a></li>
+                                <li><a href="#">Opportunities</a></li>
+                                <li><a href="#">Investors Portal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">ABOUT US</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-content">
+                            <ul>
+                                <li><a href="about.html">Historical Background</a></li>
+                                <li><a href="about.html">Mission & Vission</a></li>
+                                <li><a href="about.html">Legal</a></li>
+                                <li><a href="about.html">Core Functions</a></li>
+                                <li><a href="about.html">Board Of Directors</a></li>
+                                <li><a href="about.html">Management</a></li>
+                                <li><a href="about.html">Stakeholders</a></li>
+                                <li><a href="about.html">Financial Statements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+</div>
