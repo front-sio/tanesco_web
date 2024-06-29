@@ -83,48 +83,31 @@
       
         <div class="news-grid">
             <!-- Big News Item -->
+            {% for pinnw in pinned_news %}
             <div class="news-item big-news">
                 <img src="/media/banner/3E0A0522.jpg" alt="Big News">
                 <div class="news-item-content">
                     <h5 class="news-item-title">Big News Title</h5>
-                    <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>
-                    <a href="{% url 'news' %}" class="news-read-more">Read More</a>
+                    <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>`
+                    <a href="{% url 'news' pinnw.id %}" class="news-read-more">Read More</a>
                 </div>
             </div>
+            {% endfor %}
 
             <!-- Other News Items -->
+            {% for nw in news %}
             <div class="news-item">
                 <img src="/media/banner/3E0A0522.jpg" alt="News 1">
                 <div class="news-item-content">
                     <h5 class="news-item-title">News Title 1</h5>
                     <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>
-                    <a href="{% url 'news' %}" class="news-read-more">Read More</a>
+                    <a href="{% url 'news' nw.id %}" class="news-read-more">Read More</a>
                 </div>
             </div>
-            <div class="news-item">
-                <img src="/media/banner/3E0A0522.jpg" alt="News 2">
-                <div class="news-item-content">
-                    <h5 class="news-item-title">News Title 2</h5>
-                    <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>
-                    <a href="{% url 'news' %}" class="news-read-more">Read More</a>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="/media/banner/3E0A0522.jpg" alt="News 3">
-                <div class="news-item-content">
-                    <h5 class="news-item-title">News Title 3</h5>
-                    <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>
-                    <a href="{% url 'news' %}" class="news-read-more">Read More</a>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="/media/banner/3E0A0522.jpg" alt="News 4">
-                <div class="news-item-content">
-                    <h5 class="news-item-title">News Title 4</h5>
-                    <p class="news-item-text">Some quick example text to build on the news title and make up the bulk of the news content.</p>
-                    <a href="{% url 'news' %}" class="news-read-more">Read More</a>
-                </div>
-            </div>
+            {% endfor %}
+            
+           
+            
         </div>
     </div>
 </div>

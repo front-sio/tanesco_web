@@ -61,8 +61,9 @@
                     <div class="mega-dropdown">
                         <div class="mega-content">
                             <ul>
+                                {% for project in projects %}
                                 <li><a href="#">Goverment Funded</a></li>
-                                <li><a href="#">Donor Funded</li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -73,10 +74,9 @@
                     <div class="mega-dropdown">
                         <div class="mega-content">
                             <ul>
-                                <li><a href="{% url 'investment' %}">Environment Reports</a></li>
-                                <li><a href="#">Investment Reports</a></li>
-                                <li><a href="#">Opportunities</a></li>
-                                <li><a href="#">Investors Portal</a></li>
+                                {% for inv in investments %}
+                                <li><a href="{% url 'investment' inv.id %}">Environment Reports</a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -86,14 +86,9 @@
                     <div class="mega-dropdown">
                         <div class="mega-content">
                             <ul>
-                                <li><a href="{% url 'about' %}">Historical Background</a></li>
-                                <li><a href="about.html">Mission & Vission</a></li>
-                                <li><a href="about.html">Legal</a></li>
-                                <li><a href="about.html">Core Functions</a></li>
-                                <li><a href="about.html">Board Of Directors</a></li>
-                                <li><a href="about.html">Management</a></li>
-                                <li><a href="about.html">Stakeholders</a></li>
-                                <li><a href="about.html">Financial Statements</a></li>
+                                {% for about in abouts %}
+                                <li><a href="{% url 'about' about.id %}">Historical Background</a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>

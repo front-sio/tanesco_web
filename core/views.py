@@ -8,15 +8,15 @@ def homepage(request):
 
 
 
-def aboutpage(request):
+def about(request, pk):
     return render(request, 'pages/about.html')
 
 
 
-def investmentpage(request):
+def investment(request, pk):
     return render(request, 'pages/investment.html')
 
 
 
-def news(request):
+def news(request, pk):
     return render(request, 'pages/news.html')
